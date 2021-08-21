@@ -1,13 +1,3 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 .main {
   padding: 5rem 0;
   flex: 1;
@@ -19,11 +9,14 @@
 
 .footer {
   width: 100%;
-  height: 100px;
+  height: 40px;
+  position: absolute;
   border-top: 1px solid #eaeaea;
   display: flex;
   justify-content: center;
   align-items: center;
+  bottom: 0px;
+  left:0px;
 }
 
 .footer a {
@@ -108,14 +101,22 @@
   line-height: 1.5;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
+}
+
+
+/* ////////////////////// */
+.page-heading {
+  font-family: var(--heading);
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+}
+.main-header {
+  justify-content: space-between;
+  align-items: flex-start;
 }
