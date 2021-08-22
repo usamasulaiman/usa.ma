@@ -17,7 +17,6 @@ function NavItem(props) {
 }
 
 function Header(props) {
-
   return (
     <>
       <Link href="/">

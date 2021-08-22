@@ -2,8 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import PropTypes from 'prop-types'
 import Header from '../Header/index'
-import homeStyles from '../../styles/Home.module.css'
-import headerStyles from '../Header/Header.module.css'
+import homeStyles from '../../styles/Home.module.css';
 
 function Wrapper(props) {
   const { children } = props;
@@ -24,13 +23,13 @@ function Wrapper(props) {
           <Header />
         </header>
         {children}
-        <footer className={homeStyles.footer}>
+        <footer className="footer">
           <a
             href="https://usamasulaiman.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Check former website
+            Copyright @ Usama Sulaiman 2021
           </a>
         </footer>
       </div>

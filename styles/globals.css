@@ -1,8 +1,15 @@
+:root {
+  --heading: 'Merriweather', serif;
+  --primary-black:  #121212;
+  --secondary-black: #353535;
+
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  color: #121212;
+  color: var(--primary-black);
   font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', sans-serif;
   background: #FFFCF9;
   font-size:62.5%;
@@ -17,12 +24,44 @@ a {
   box-sizing: border-box;
 }
 
+
+.footer {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  left:0px;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+/* User defined styles */
+
 a,p,span,li,ul,ol,div,input,button,form,fieldset,textarea,label,legend,select,optgroup,option {
   font-size: 1.6rem;
 }
 
-:root {
-  --heading: 'Merriweather', serif;
+.page-heading {
+  font-family: var(--heading);
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.page-heading-subtext {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
 }
 
 .heading-font {
@@ -30,8 +69,8 @@ a,p,span,li,ul,ol,div,input,button,form,fieldset,textarea,label,legend,select,op
 }
 
 .container {
-  padding: 2rem;
+  padding: 0 2rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
