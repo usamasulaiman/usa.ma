@@ -1,18 +1,11 @@
 import homeStyles from '../styles/Home.module.css';
 import PageSection from '../components/PageSection';
-import RecentProjects from '../components/RecentProjects';
+import RecentWork from '../components/RecentWork';
 
 export default function Home() {
   return (
     <>
-      {/* <Head>
-        <title>Usama Sulaiman</title>
-        <meta name="description" content="Usama's Personal Website" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head> */}
-
-     
-      <main className="container home">
+      <main className="container page home">
         <div className={homeStyles['small-intro']}>
           <h1 className="page-heading">Hey there! 👋🏼 </h1>
           <p className="page-heading-subtext">
@@ -20,7 +13,7 @@ export default function Home() {
           </p>
         </div>
         <PageSection withSeparator title="Currently working on">
-          <RecentProjects />
+          <RecentWork />
         </PageSection>
       </main>
 

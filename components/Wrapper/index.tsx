@@ -18,7 +18,7 @@ function Wrapper(props) {
         <meta name="description" content="Usama's Personal Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
+      <div className="outer-wrapper">
         <header className={`container ${homeStyles['main-header']}`}>
           <Header />
         </header>

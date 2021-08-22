@@ -1,0 +1,8 @@
+.recent-project {
+  margin-bottom: 4rem;
+}
+
+.recent-project .recent-project-image {
+  position: relative;
+  height:124px;
+}
