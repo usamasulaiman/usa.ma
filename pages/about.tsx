@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
-import PageSection from '../components/PageSection'
+import React, { useState } from 'react';
+import PageSection from '../components/PageSection';
+import Image from 'next/image';
 import Pill from '../components/Pill';
+import profileStyles from '../styles/Profile.module.css';
 import { aboutMeDescription } from '../constants';
 
 
@@ -14,11 +16,11 @@ export default function About() {
 
   return (
     <div className="container page about">
-      <PageSection withSeparator title="Currently working on">
-        <div className="avatar">
-          <img src="../../images/profile-photo-usama.png" alt="Usama's Profile photo" />
+      <PageSection title="About me">
+        <div className={profileStyles['avatar']}>
+          <Image src="/images/profile-photo-usama.jpg" alt="Usama's Profile photo" width={120} height={120} />
         </div>
-        <div className="type-of-description">
+        <div className={profileStyles['type-of-description']}>
           {Object.keys(aboutMeDescription).map((key, index) => (
             <Pill key={index} selected={key === descriptionType} value={{ text: key, id: index }} color={pillColor[index]} onClick={(value) => showDescription(value)} />
           ))}

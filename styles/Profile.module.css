@@ -1,0 +1,10 @@
+.avatar {
+}
+.avatar img {
+  border-radius: 50%;
+}
+
+.type-of-description {
+  display: flex;
+  justify-content: start;
+}
