@@ -10,7 +10,7 @@ body {
   padding: 0;
   margin: 0;
   color: var(--primary-black);
-  font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', sans-serif;
+  font-family: 'Open Sans';
   background: #FFFCF9;
   font-size:62.5%;
 }

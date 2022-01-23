@@ -4,7 +4,7 @@ import PageDescriptionStyles from './PageDescription.module.css';
 
 function PageDescription({text}) {
   return (
-    <div className={PageDescriptionStyles['page-description"']}>
+    <div className={PageDescriptionStyles['page-description']}>
       {text}
     </div>
     );

@@ -1,0 +1,43 @@
+.pills {
+  display: flex;
+  flex-flow: row wrap;
+  grid-row-gap: 8px;
+  grid-column-gap: 8px;
+
+}
+.pills .pill {
+  border-radius: 12px;
+  padding: 2px 8px;
+  background: rgba(0,0,0,.19);
+  color: #121212;
+  font-size: 14px;
+  font-family: var(--heading);
+  cursor: pointer;
+}
+.pills .pill.not-selected {
+  opacity: .6;
+}
+.pills .pill.red {
+  background-color: rgba(199, 56, 46, .15);
+  color:#c7382e;
+}
+.pills .pill.blue {
+  background-color: rgba(26, 72, 189, .15);
+  color:#1A48BD;
+}
+.pills .pill.green {
+  background-color: rgba(44, 149, 98, .15);
+  color:#2C9562;
+}
+.pills .pill.brown {
+  background-color: rgba(74, 37, 34, .15);
+  color:#4A2522;
+}
+.pills .pill.purple {
+  background-color: rgba(118, 36, 201, .15);
+  color:#7624C9;
+}
+.pills .pill.yellow {
+  background-color: rgba(238, 176, 18, .15);
+  color:#EEB012;
+}
