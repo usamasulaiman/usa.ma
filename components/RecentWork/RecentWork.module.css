@@ -1,8 +1,23 @@
 .recent-work {
-  margin-bottom: 4rem;
+  margin: 2.8rem auto;
+  padding-left: 16px
 }
 
-.recent-work .recent-work-image {
-  position: relative;
-  height:124px;
+.recent-work-info {
+  list-style-type: square;
+  margin-bottom: 20px;
+}
+
+.recent-work-info .recent-work-title {
+  line-height: 25px;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.recent-work-info .recent-work-description {
+  margin: 0px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #595857;
+  font-style: italic;
 }
