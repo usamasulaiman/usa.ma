@@ -4,5 +4,41 @@
 
 .recent-project .recent-project-image {
   position: relative;
-  height:124px;
+  height: 200px;
+  border-radius: 16px 16px 0px 0px;
+  overflow: hidden;
+}
+
+.recent-project .recent-project-info {
+  color: white;
+  border-radius: 0px 0px 16px 16px;
+  padding: 4px 12px;
+}
+.recent-project .recent-project-info.red {
+  background-color: rgba(199, 56, 46, .80);
+}
+.recent-project .recent-project-info.blue {
+  background-color: rgba(26, 72, 189, .80);
+}
+.recent-project .recent-project-info.green {
+  background-color: rgba(44, 149, 98, .80);
+}
+.recent-project .recent-project-info.brown {
+  background-color: rgba(74, 37, 34, .80);
+}
+.recent-project .recent-project-info.purple {
+  background-color: rgba(118, 36, 201, .80);
+}
+.recent-project .recent-project-info.yellow {
+  background-color: rgba(238, 176, 18, .80);
+}
+
+.recent-project .recent-project-title {
+  font-weight: bold;
+  margin: 12px auto;
+  line-height: 16px;
+}
+.recent-project .recent-project-description {
+  font-weight: 300;
+  font-size: 14px;
 }

@@ -8,3 +8,18 @@
   display: flex;
   justify-content: start;
 }
+.description {
+  color: var(--secondary-black);
+  line-height: 150%;
+}
+.description a {
+  text-decoration: underline;
+}
+
+.social {
+  display: flex;
+  grid-gap: 16px;
+}
+.social img {
+  font-style: #2E3A59;
+}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PageSection from '../components/PageSection';
 import Image from 'next/image';
+import Link from 'next/link';
 import Pills from '../components/Pills';
 import profileStyles from '../styles/Profile.module.css';
 import { aboutMeDescription } from '../constants';
@@ -8,7 +9,14 @@ import { aboutMeDescription } from '../constants';
 
 export default function About() {
   // Constants
-  const data = [{ text: 'short', id: 1 }, { text: 'medium', id: 2 }, { text: 'long', id: 3 }]
+  const data = Object.keys(aboutMeDescription).map((type, index) => ({ text: type, id: index + 1}))
+  const twitterLink = 'https://twitter.com/findusama';
+  const socialIcons = [
+    { id: 0, url: 'https://github.com/usamasulaiman', name: 'github',},
+    { id: 1, url: 'https://www.linkedin.com/feed/', name: 'linkedin',},
+    { id: 2, url: twitterLink, name: 'twitter',},
+    { id: 3, url: 'https://www.instagram.com/findusama/', name: 'instagram',},
+  ];
 
   // States
   const [descriptionType, updateDescriptionType] = useState('medium');
@@ -27,8 +35,21 @@ export default function About() {
         <div className={profileStyles['type-of-description']}>
           <Pills pillData={data} onSelect={handleProfileTypeSelection} noUnselect />
         </div>
-        <div className="description">
+        <div className={profileStyles['description']}>
           <p>{aboutMeDescription[descriptionType]}</p>
+        </div>
+        <div className={profileStyles['social']}>
+          {socialIcons.map((icon, index) => (
+            <Link href={icon.url}>
+              <a target="_blank"><Image src={`/social/${icon.name}.svg`} alt={icon.name} width={24} height={24} /></a>
+            </Link>
+          ))}
+        </div>
+      </PageSection>
+      <PageSection title="Want to get in touch?" withSeparator>
+        <div className={profileStyles['contact']}>
+          <p className={profileStyles['description']}>The fastest way to get in touch with me is through <a href={twitterLink} target="_blank">twitter</a>. Otherwise you can drop me a line <a href="mailto: postusama@gmail.com" target="_blank">here</a>, and I’ll get in touch.</p>
+          <p className={profileStyles['description']}>Please add as much information as you can, it would reduce friction and we’ll be talking about important things sooner.</p>
         </div>
       </PageSection>
     </div>

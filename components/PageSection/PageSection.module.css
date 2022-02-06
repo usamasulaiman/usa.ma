@@ -12,7 +12,7 @@
 }
 
 .section .section-header .underline {
-  margin-top: -16px;
+  margin-top: -32px;
   display: flex;
   z-index: 0;
   position: relative;

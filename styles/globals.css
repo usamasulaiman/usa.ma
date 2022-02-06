@@ -83,4 +83,5 @@ a,p,span,li,ul,ol,div,input,button,form,fieldset,textarea,label,legend,select,op
 
 .page {
   flex: 1;
+  margin-top: -3rem;
 }
