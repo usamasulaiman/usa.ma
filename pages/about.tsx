@@ -4,26 +4,19 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Pills from '../components/Pills';
 import profileStyles from '../styles/Profile.module.css';
-import { aboutMeDescription } from '../constants';
+import { aboutMeDescription, twitterLink, socialIcons } from '../constants';
 
 
 export default function About() {
   // Constants
-  const data = Object.keys(aboutMeDescription).map((type, index) => ({ text: type, id: index + 1}))
-  const twitterLink = 'https://twitter.com/findusama';
-  const socialIcons = [
-    { id: 0, url: 'https://github.com/usamasulaiman', name: 'github',},
-    { id: 1, url: 'https://www.linkedin.com/feed/', name: 'linkedin',},
-    { id: 2, url: twitterLink, name: 'twitter',},
-    { id: 3, url: 'https://www.instagram.com/findusama/', name: 'instagram',},
-  ];
+  const data = Object.keys(aboutMeDescription).map((type, index) => ({ text: type, id: index + 1 }));
 
   // States
   const [descriptionType, updateDescriptionType] = useState('medium');
 
   // Logic
   const handleProfileTypeSelection = (data) => {
-    updateDescriptionType(data.text.toLowerCase());
+    updateDescriptionType(data?.text?.toLowerCase());
   }
 
   return (
@@ -40,9 +33,12 @@ export default function About() {
         </div>
         <div className={profileStyles['social']}>
           {socialIcons.map((icon, index) => (
-            <Link href={icon.url}>
-              <a target="_blank"><Image src={`/social/${icon.name}.svg`} alt={icon.name} width={24} height={24} /></a>
+            <Link key={index} href={icon?.url}>
+              <a target="_blank">
+                <Image src={`/social/${icon?.name}.svg`} alt={icon?.name} width={24} height={24} />
+              </a>
             </Link>
+            // <p> sdaff</p>
           ))}
         </div>
       </PageSection>

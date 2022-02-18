@@ -1,12 +1,12 @@
-.avatar {
-}
+/* .avatar {
+} */
 .avatar img {
   border-radius: 50%;
 }
 
 .type-of-description {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .description {
   color: var(--secondary-black);

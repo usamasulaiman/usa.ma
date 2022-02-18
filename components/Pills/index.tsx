@@ -9,7 +9,7 @@ function Pills({ pillData, onSelect, noUnselect }: TPillData) {
   const [selectedPill, setSelectedPill] = useState<IPill>(defaultSelectedPillValue);
   
   const onPillSelect = (pill: IPill) : void => {
-    if (pill.id === selectedPill.id && noUnselect) setSelectedPill(defaultSelectedPillValue);
+    if (pill?.id === selectedPill?.id && noUnselect) setSelectedPill(defaultSelectedPillValue);
     else setSelectedPill(pill);
     onSelect(pill);
   };
@@ -24,11 +24,11 @@ function Pills({ pillData, onSelect, noUnselect }: TPillData) {
   return (
     <div className={PillsStyles['pills']}>
       {pillData.map((pill, index) => {
-        const specialClass = !!selectedPill.id && selectedPill.id !== pill.id ? PillsStyles['not-selected'] : '';
-        const color = pill.color || colors[pill.id%7];
+        const specialClass = !!selectedPill?.id && selectedPill?.id !== pill?.id ? PillsStyles['not-selected'] : '';
+        const color = pill?.color || colors[pill?.id%7];
         return (
-          <div className={`${PillsStyles.pill} ${PillsStyles[color]} ${specialClass}`} onClick={() => onPillSelect(pill)}>
-            <span>{pill.text}</span>
+          <div key={index} className={`${PillsStyles?.pill} ${PillsStyles[color]} ${specialClass}`} onClick={() => onPillSelect(pill)}>
+            <span>{pill?.text}</span>
           </div>
         )
       })}
