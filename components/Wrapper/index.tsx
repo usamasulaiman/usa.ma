@@ -1,11 +1,15 @@
 import React from 'react'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import PropTypes from 'prop-types'
 import Header from '../Header/index'
 import homeStyles from '../../styles/Home.module.css';
 
 function Wrapper(props) {
   const { children } = props;
+  const router = useRouter();
+  const routeArray = router?.pathname?.split('/');
+  const shouldShowPageHeader = routeArray?.length === 2;
 
   return (
     <>
@@ -19,10 +23,16 @@ function Wrapper(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="outer-wrapper">
-        <header className={`container ${homeStyles['main-header']}`}>
-          <Header />
-        </header>
-        {children}
+        {shouldShowPageHeader && (
+          <header className={`container ${homeStyles['main-header']}`}>
+            <Header />
+          </header>
+        )}
+        {/* {routeArray.length > 2 ? (
+          <div className={`${homeStyles['inner-page']} ${routeArray[1]}`}>{children}</div>
+        ) : ( */}
+          <>{children}</>
+        {/* )} */}
         <footer className="footer">
           <a
             href="https://usamasulaiman.com"

@@ -2,7 +2,12 @@
   --heading: 'Merriweather', serif;
   --primary-black:  #121212;
   --secondary-black: #353535;
-
+  --verySmallMob: "(max-width: 399px)";
+  --mobile: "(min-width: 400px) and (max-width: 767px)";
+  --tablet: "(min-width: 768px) and (max-width: 991px)";
+  --desktop: "(min-width: 992px) and (max-width: 1199px)";
+  --largeDesktop: "(min-width: 1200px)";
+  --insaneScreen: "(min-width: 1600px)";
 }
 
 html,
@@ -79,9 +84,16 @@ a,p,span,li,ul,ol,div,input,button,form,fieldset,textarea,label,legend,select,op
   min-height: 100vh;
   display: flex;
   flex-flow: column;
+  justify-content: space-between;
 }
 
 .page {
   flex: 1;
-  margin-top: -3rem;
+  /* margin-top: -3rem; */
+}
+
+@media (min-width: 992px) {
+  .outer-wrapper{
+    background: repeating-linear-gradient(90deg, rgb(75 49 19 / 42%), transparent 1px calc(100vw / 6));
+  }
 }
