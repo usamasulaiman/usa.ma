@@ -8,6 +8,7 @@ function RecentProjects() {
   return (
     <>
       {projects.length && projects.map((project, index) => {
+        // const projectDescriptionStyle = `${projectStyles['recent-project-info']} ${projectStyles[colors[project.id%7]]}`;
         const projectDescriptionStyle = `${projectStyles['recent-project-info']} ${projectStyles[colors[project.id%7]]}`;
         return (
           <div key={index} className={projectStyles['recent-project']}>

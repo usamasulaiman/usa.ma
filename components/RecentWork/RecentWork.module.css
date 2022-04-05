@@ -9,7 +9,7 @@
 }
 
 .recent-work-info .recent-work-title {
-  line-height: 25px;
+  line-height: 1.25;
   font-weight: 400;
   margin: 0px;
 }
@@ -17,7 +17,15 @@
 .recent-work-info .recent-work-description {
   margin: 0px;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.25;
   color: #595857;
   font-style: italic;
+}
+@media (min-width: 992px) {
+  .recent-work-info .recent-work-title {
+    font-size: 20px;
+  }
+  .recent-work-info .recent-work-description {
+    font-size: 18px;
+  }
 }

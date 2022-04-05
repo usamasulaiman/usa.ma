@@ -7,8 +7,9 @@ function BlogPage(props) {
   console.log('meta is: ', props.meta);
   const router = useRouter();
   const parent = router?.pathname?.split('/')[1];
+  // const wrapperStyles = 'inner-wrapper container';
   return (
-    <div className={BlogStyles['inner-wrapper']}>
+    <div className={`${BlogStyles['inner-wrapper']} container`}>
       <button className={BlogStyles['back-button']} onClick={() => router.push('/blog')}>{`< ${parent}`}</button>
       {props.children}
     </div>

@@ -32,3 +32,9 @@
   right: auto;
   left: 10px;
 }
+
+@media (min-width: 992px) {
+  .separator {
+    margin: 8rem auto;
+  }
+}
