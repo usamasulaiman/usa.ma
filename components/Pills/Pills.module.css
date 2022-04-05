@@ -41,3 +41,9 @@
   background-color: rgba(238, 176, 18, .15);
   color:#EEB012;
 }
+
+@media (min-width: 992px) {
+  .pills .pill {
+    font-weight: 300;
+  }
+}

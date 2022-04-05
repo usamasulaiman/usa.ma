@@ -77,6 +77,9 @@ a,p,span,li,ul,ol,div,input,button,form,fieldset,textarea,label,legend,select,op
   padding: 0 2rem;
   display: flex;
   flex-direction: column;
+  max-width: 950px;
+  margin: auto;
+  width: 100%;
   /* align-items: center; */
 }
 
@@ -94,6 +97,6 @@ a,p,span,li,ul,ol,div,input,button,form,fieldset,textarea,label,legend,select,op
 
 @media (min-width: 992px) {
   .outer-wrapper{
-    background: repeating-linear-gradient(90deg, rgb(75 49 19 / 42%), transparent 1px calc(100vw / 6));
+    /* background: repeating-linear-gradient(90deg, rgb(75 49 19 / 42%), transparent 1px calc(100vw / 6)); */
   }
 }
