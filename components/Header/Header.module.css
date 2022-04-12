@@ -17,8 +17,12 @@
   font-size: 16px;
   line-height: 22px;
   list-style: none;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+  text-transform: lowercase;
   margin-bottom: 16px;
+  /* a {
+    
+  } */
 }
 
 @media (min-width: 992px) {
@@ -31,7 +35,9 @@
   }
   .navigation .nav-items .nav-item a {
     font-size: 20px;
-    font-style: italic;
+    /* font-style: italic; */
+    text-decoration: underline;
     font-weight: normal;
+    color: #2A4D4C;
   }
 }

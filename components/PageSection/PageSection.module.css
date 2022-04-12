@@ -9,6 +9,7 @@
   font-family: var(--heading);
   z-index: 1;
   position: relative;
+  width: max-content;
 }
 
 .section .section-header .underline {
@@ -16,6 +17,18 @@
   display: block;
   z-index: 0;
   position: relative;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+.section .section-header.active .underline {
+  animation: dash 3s linear forwards;
+}
+
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 @media (min-width: 992px) {
