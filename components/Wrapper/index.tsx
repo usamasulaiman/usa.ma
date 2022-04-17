@@ -15,7 +15,7 @@ function Wrapper(props) {
     <>
       <Head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700family=Yeseva+One&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap"
           rel="stylesheet"
         />
         <title>Usama Sulaiman</title>

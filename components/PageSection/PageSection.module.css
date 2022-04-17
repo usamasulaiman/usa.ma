@@ -4,12 +4,13 @@
 
 .section .section-header .section-heading {
   font-weight: normal;
-  font-size: 20px;
+  font-size: 28px;
   line-height: 70%;
   font-family: var(--heading);
   z-index: 1;
   position: relative;
   width: max-content;
+  color: var(--primary-brand);
 }
 
 .section .section-header .underline {
@@ -33,7 +34,10 @@
 
 @media (min-width: 992px) {
   .section .section-header .section-heading {
-    font-size: 32px;
+    font-size: 48px;
     font-weight: 300;
+  }
+  .section .section-header .underline {
+    margin-top: -44px;
   }
 }

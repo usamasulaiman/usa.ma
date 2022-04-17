@@ -48,7 +48,19 @@
     font-size: 20px;
     font-weight: normal;
   }
+  .recent-project .recent-project-image {
+    height: 300px;
+  }
+  .recent-project .recent-project-info {
+    padding: 20px 16px;
+  }
   .recent-project .recent-project-description {
     font-size: 16px;
+  }
+
+  .recent-projects {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 24px;
   }
 }

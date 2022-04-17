@@ -6,7 +6,7 @@ import { colors } from '../../constants';
 
 function RecentProjects() {
   return (
-    <>
+    <div className={projectStyles['recent-projects']}>
       {projects.length && projects.map((project, index) => {
         // const projectDescriptionStyle = `${projectStyles['recent-project-info']} ${projectStyles[colors[project.id%7]]}`;
         const projectDescriptionStyle = `${projectStyles['recent-project-info']} ${projectStyles[colors[project.id%7]]}`;
@@ -22,7 +22,7 @@ function RecentProjects() {
           </div>
         )}
       )}
-    </>
+    </div>
   )
 }
 
