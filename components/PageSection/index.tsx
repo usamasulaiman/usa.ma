@@ -17,7 +17,7 @@ function PageSection(props) {
 
   function handleUnderlineWidth() {
     const titleWidth : number = headingRef?.current?.childNodes?.[0]?.clientWidth;
-    headingRef?.current?.style?.maxWidth = titleWidth;
+    if (titleWidth) headingRef.current.style.maxWidth = titleWidth;
   }
 
   useEffect(() => {
