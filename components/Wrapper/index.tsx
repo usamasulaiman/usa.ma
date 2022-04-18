@@ -1,8 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import PropTypes from 'prop-types'
-import Header from '../Header/index'
+import PropTypes from 'prop-types';
+import Header from '../Header/index';
 import homeStyles from '../../styles/Home.module.css';
 
 function Wrapper(props) {
@@ -15,7 +15,7 @@ function Wrapper(props) {
     <>
       <Head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700family=Yeseva+One&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Yeseva+One&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap"
           rel="stylesheet"
         />
         <title>Usama Sulaiman</title>

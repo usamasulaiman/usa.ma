@@ -5,7 +5,6 @@
   font-weight: bold;
   font-size: 28px;
   line-height: 1;
-  /* line-height: 115%; */
   margin:0px;
   color:#2A4D4C;
 }
@@ -18,12 +17,8 @@
   font-size: 16px;
   line-height: 22px;
   list-style: none;
-  /* text-transform: uppercase; */
   text-transform: lowercase;
   margin-bottom: 16px;
-  /* a {
-    
-  } */
 }
 .navigation .nav-items .nav-item a {
   color: #2A4D4C;
@@ -33,16 +28,12 @@
 }
 
 @media (min-width: 992px) {
-  .logo {
-  /* font-size: 40px; */
-  }
   .navigation .nav-items {
     display:flex;
     grid-gap: 16px;
   }
   .navigation .nav-items .nav-item a {
     font-size: 20px;
-    /* font-style: italic; */
     text-decoration: underline;
     font-weight: normal;
     text-decoration-style: wavy;

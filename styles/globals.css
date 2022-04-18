@@ -36,13 +36,10 @@ a {
   width: 100%;
   height: 40px;
   margin-top: 4rem;
-  /* position: absolute; */
   border-top: 1px solid #eaeaea;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* bottom: 0px;
-  left:0px; */
 }
 
 .footer a {
@@ -83,7 +80,6 @@ a,p,span,li,ul,ol,div,input,button,form,fieldset,textarea,label,legend,select,op
   max-width: 950px;
   margin: auto;
   width: 100%;
-  /* align-items: center; */
 }
 
 .outer-wrapper {
@@ -95,13 +91,9 @@ a,p,span,li,ul,ol,div,input,button,form,fieldset,textarea,label,legend,select,op
 
 .page {
   flex: 1;
-  /* margin-top: -3rem; */
 }
 
 @media (min-width: 992px) {
-  /* .outer-wrapper{
-    background: repeating-linear-gradient(90deg, rgb(75 49 19 / 42%), transparent 1px calc(100vw / 6));
-  } */
   .page-heading {
     font-size: 48px;
     line-height: 30px;
