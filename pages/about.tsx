@@ -22,30 +22,36 @@ export default function About() {
   return (
     <div className="container page about">
       <PageSection title="About me">
-        <div className={profileStyles['avatar']}>
-          <Image src="/images/profile-photo-usama.jpg" alt="Usama's Profile photo" width={120} height={120} />
-        </div>
-        <div className={profileStyles['type-of-description']}>
-          <Pills pillData={data} onSelect={handleProfileTypeSelection} noUnselect />
-        </div>
-        <div className={profileStyles['description']}>
-          <p>{aboutMeDescription[descriptionType]}</p>
-        </div>
-        <div className={profileStyles['social']}>
-          {socialIcons.map((icon, index) => (
-            <Link key={index} href={icon?.url}>
-              <a target="_blank">
-                <Image src={`/social/${icon?.name}.svg`} alt={icon?.name} width={24} height={24} />
-              </a>
-            </Link>
-            // <p> sdaff</p>
-          ))}
+        <div className={profileStyles['profile-page']}>
+          <div className={profileStyles['image-area']}>
+            <div className={profileStyles['avatar']}>
+              <Image src="/images/profile-photo.jpg" alt="Usama's Profile photo" width={1934} height={2512} layout="intrinsic" />
+              {/* <Image src="/images/profile-photo-usama.jpg" alt="Usama's Profile photo" width={120} height={120} /> */}
+            </div>
+          </div>
+          <div className={profileStyles['text-area']}>
+            <div className={profileStyles['type-of-description']}>
+              <Pills pillData={data} onSelect={handleProfileTypeSelection} noUnselect />
+            </div>
+            <p className={profileStyles['description']}>{aboutMeDescription[descriptionType]}</p>
+            <div className={profileStyles['social']}>
+              {socialIcons.map((icon, index) => (
+                <Link key={index} href={icon?.url}>
+                  <a target="_blank">
+                    <Image src={`/social/${icon?.name}.svg`} alt={icon?.name} width={24} height={24} />
+                  </a>
+                </Link>
+                // <p> sdaff</p>
+              ))}
+            </div>
+          </div>
         </div>
       </PageSection>
-      <PageSection title="Want to get in touch?" withSeparator>
+      <PageSection withSeparator>
         <div className={profileStyles['contact']}>
-          <p className={profileStyles['description']}>The fastest way to get in touch with me is through <a href={twitterLink} target="_blank">twitter</a>. Otherwise you can drop me a line <a href="mailto: postusama@gmail.com" target="_blank">here</a>, and I’ll get in touch.</p>
-          <p className={profileStyles['description']}>Please add as much information as you can, it would reduce friction and we’ll be talking about important things sooner.</p>
+          <h2 className={profileStyles['contact-subheading']}>Want to get in touch?</h2>
+          <p>The fastest way to get in touch with me is through <a href={twitterLink} target="_blank">twitter</a>. Otherwise you can drop me a line <a href="mailto: postusama@gmail.com" target="_blank">here</a>, and I’ll get in touch.</p>
+          <p>Please add as much information as you can, it would reduce friction and we’ll be talking about important things sooner.</p>
         </div>
       </PageSection>
     </div>

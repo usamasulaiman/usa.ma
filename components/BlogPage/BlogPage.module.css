@@ -7,7 +7,6 @@
   border:0px;
   text-transform: uppercase;
   width: fit-content;
-  /* display: revert; */
 }
 
 .back-button::after {
@@ -36,11 +35,8 @@
 .inner-wrapper ul,
 .inner-wrapper ol,
 .inner-wrapper span {
-  /* color:#595857; */
   line-height: 1.5;
   color: var(--secondary-black);
-
-  /* font-weight: 300; */
   margin: 24px auto;
 }
 

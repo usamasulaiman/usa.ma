@@ -1,10 +1,10 @@
 
 
 .logo {
-  font-family: var(--heading);
+  font-family: var(--logo-font);
   font-weight: bold;
-  font-size: 32px;
-  line-height: 115%;
+  font-size: 28px;
+  line-height: 1;
   margin:0px;
   color:#2A4D4C;
 }
@@ -17,21 +17,29 @@
   font-size: 16px;
   line-height: 22px;
   list-style: none;
-  text-transform: uppercase;
+  text-transform: lowercase;
   margin-bottom: 16px;
+}
+.navigation .nav-items .nav-item a {
+  color: #2A4D4C;
+}
+.navigation .nav-items .nav-item.active a {
+  color: rgba(199, 56, 46, .80);
 }
 
 @media (min-width: 992px) {
-  .logo {
-  font-size: 40px;
-  }
   .navigation .nav-items {
     display:flex;
     grid-gap: 16px;
   }
   .navigation .nav-items .nav-item a {
     font-size: 20px;
-    font-style: italic;
+    text-decoration: underline;
     font-weight: normal;
+    text-decoration-style: wavy;
+    text-underline-offset: 12px;
+    text-decoration-line: underline;
+    line-height: 52px;
+    display: flex;
   }
 }
