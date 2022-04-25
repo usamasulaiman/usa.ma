@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import PageDescriptionStyles from './PageDescription.module.css';
 
 type TDescription = {
-  text: string | HTMLParagraphElement,
+  text: string,
   isHTML?: boolean,
 }
 
