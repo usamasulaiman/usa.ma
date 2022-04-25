@@ -1,0 +1,50 @@
+.callout {
+  padding: 16px 12px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  grid-gap: 8px;
+  border:0px;
+  border-left: 8px solid;
+}
+.callout .bg {
+  position: absolute;
+  left:0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: .15;
+}
+.callout p,
+.callout span,
+.callout a,
+.callout div {
+  font-size: 16px;
+  margin: 0px;
+}
+.callout .emoji {
+  font-size: 32px;
+  margin: 0px;
+}
+.callout .content {
+  z-index: 1;
+}
+
+@media (min-width: 992px) {
+  .callout {
+    padding: 20px;
+    grid-gap: 20px;
+    border-left: 12px solid;
+  }
+  .callout p,
+  .callout span,
+  .callout a,
+  .callout div {
+    font-size: 20px;
+  }
+  .callout .emoji {
+    font-size: 48px;
+  }
+}

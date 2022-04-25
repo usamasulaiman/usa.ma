@@ -23,7 +23,7 @@ function Header(props) {
   return (
     <>
       <Link href="/">
-        <a className="nav-link">
+        <a className={headerStyles['nav-link']}>
           <h1 className={headerStyles.logo}>
           Usama <span>M.</span><br/>Sulaiman
           </h1>

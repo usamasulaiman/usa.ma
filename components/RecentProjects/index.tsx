@@ -2,14 +2,13 @@ import React from 'react';
 import Image from 'next/image';
 import projects from '../../constants/projects';
 import projectStyles from './RecentProjects.module.css';
-import { colors } from '../../constants';
+import { palette } from '../../constants';
 
 function RecentProjects() {
   return (
     <div className={projectStyles['recent-projects']}>
       {projects.length && projects.map((project, index) => {
-        // const projectDescriptionStyle = `${projectStyles['recent-project-info']} ${projectStyles[colors[project.id%7]]}`;
-        const projectDescriptionStyle = `${projectStyles['recent-project-info']} ${projectStyles[colors[project.id%7]]}`;
+        const projectDescriptionStyle = `${projectStyles['recent-project-info']} ${projectStyles[palette[project.id%7]]}`;
         return (
           <div key={index} className={projectStyles['recent-project']}>
             <div className={projectStyles['recent-project-image']}>

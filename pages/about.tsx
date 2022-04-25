@@ -9,7 +9,7 @@ import { aboutMeDescription, twitterLink, socialIcons } from '../constants';
 
 export default function About() {
   // Constants
-  const data = Object.keys(aboutMeDescription).map((type, index) => ({ text: type, id: index + 1 }));
+  const data = Object.keys(aboutMeDescription).filter(item => item !== 'home').map((type, index) => ({ text: type, id: index + 1 }));
 
   // States
   const [descriptionType, updateDescriptionType] = useState('medium');
@@ -33,7 +33,8 @@ export default function About() {
             <div className={profileStyles['type-of-description']}>
               <Pills pillData={data} onSelect={handleProfileTypeSelection} noUnselect />
             </div>
-            <p className={profileStyles['description']}>{aboutMeDescription[descriptionType]}</p>
+            {/* <p className={profileStyles['description']}>{aboutMeDescription[descriptionType]}</p> */}
+            <p className={profileStyles['description']} dangerouslySetInnerHTML={{ __html: aboutMeDescription[descriptionType] }} />
             <div className={profileStyles['social']}>
               {socialIcons.map((icon, index) => (
                 <Link key={index} href={icon?.url}>
@@ -41,7 +42,6 @@ export default function About() {
                     <Image src={`/social/${icon?.name}.svg`} alt={icon?.name} width={24} height={24} />
                   </a>
                 </Link>
-                // <p> sdaff</p>
               ))}
             </div>
           </div>

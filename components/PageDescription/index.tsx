@@ -2,7 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import PageDescriptionStyles from './PageDescription.module.css';
 
-function PageDescription({text}) {
+type TDescription = {
+  text: string,
+  isHTML?: boolean,
+}
+
+function PageDescription({ text, isHTML }: TDescription) {
+  if (isHTML) return <div className={PageDescriptionStyles['page-description']} dangerouslySetInnerHTML={{ __html: text }} />
   return (
     <div className={PageDescriptionStyles['page-description']}>
       {text}

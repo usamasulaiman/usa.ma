@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {colors} from '../../constants';
+import { palette } from '../../constants';
 import PillsStyles from './Pills.module.css';
 import { IPill, TPillData } from '../types';
 
@@ -25,7 +25,7 @@ function Pills({ pillData, onSelect, noUnselect }: TPillData) {
     <div className={PillsStyles['pills']}>
       {pillData.map((pill, index) => {
         const specialClass = !!selectedPill?.id && selectedPill?.id !== pill?.id ? PillsStyles['not-selected'] : '';
-        const color = pill?.color || colors[pill?.id%7];
+        const color = pill?.color || palette[pill?.id%7];
         return (
           <div key={index} className={`${PillsStyles?.pill} ${PillsStyles[color]} ${specialClass}`} onClick={() => onPillSelect(pill)}>
             <span>{pill?.text}</span>
