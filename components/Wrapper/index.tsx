@@ -39,7 +39,7 @@ function Wrapper(props) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Copyright @ Usama Sulaiman 2021
+            Copyright @ Usama Sulaiman 2022
           </a>
         </footer>
       </div>

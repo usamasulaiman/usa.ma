@@ -1,15 +1,21 @@
 :root {
   --logo-font: 'Merriweather', serif;
   --heading: 'Yeseva One', cursive;
-  --primary-brand: #2A4D4C;
-  --primary-black:  #191919;
-  --secondary-black: #353535;
   --verySmallMob: "(max-width: 399px)";
   --mobile: "(min-width: 400px) and (max-width: 767px)";
   --tablet: "(min-width: 768px) and (max-width: 991px)";
   --desktop: "(min-width: 992px) and (max-width: 1199px)";
   --largeDesktop: "(min-width: 1200px)";
   --insaneScreen: "(min-width: 1600px)";
+  --primary-brand: #2A4D4C;
+  --primary-black:  #191919;
+  --secondary-black: #353535;
+  --brand-red: #c7382e;
+  --brand-blue: #1A48BD;
+  --brand-green: #2C9562;
+  --brand-brown: #4A2522;
+  --brand-purple: #7624C9;
+  --brand-yellow: #EEB012;
 }
 
 html,
@@ -24,7 +30,7 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 * {
@@ -58,7 +64,7 @@ a,p,span,li,ul,ol,div,input,button,form,fieldset,textarea,label,legend,select,op
 .page-heading {
   font-family: var(--heading);
   font-weight: normal;
-  font-size: 24px;
+  font-size: 28px;
   line-height: 30px;
   color: var(--primary-brand);
 }

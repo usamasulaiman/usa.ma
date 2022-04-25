@@ -4,7 +4,13 @@
   align-items: flex-start;
   margin-top: 2rem;
 }
+.recruiter-message span, .recruiter-message span a {
+  font-size: 20px;
+}
+.recruiter-message:after {
+  content: '';
 
+}
 .inner-page {
   padding: 20px;
 }
